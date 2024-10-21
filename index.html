@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食事調査票</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>食事調査票</h1>
+    <p>それぞれの食材・飲料について、過去1か月間で平均的にどれくらい摂取していたか、1つを選んでください。</p>
+    <form id="questionnaire-form">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>食べなかった</th>
+                    <th>週1回未満</th>
+                    <th>週1回</th>
+                    <th>週2-3回</th>
+                    <th>週4-6回</th>
+                    <th>1日1回</th>
+                    <th>1日2回</th>
+                    <th>1日3回以上</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- "食材" row without choices -->
+                <tr>
+                    <td colspan="9" class="food-category">食材</td>
+                </tr>
+
+                <!-- Food item rows with choices -->
+                <tr>
+                    <td>果物(果物ジュースは除く)</td>
+                    <td><input type="radio" name="fruit" value="0"></td>
+                    <td><input type="radio" name="fruit" value="1"></td>
+                    <td><input type="radio" name="fruit" value="2"></td>
+                    <td><input type="radio" name="fruit" value="3"></td>
+                    <td><input type="radio" name="fruit" value="4"></td>
+                    <td><input type="radio" name="fruit" value="5"></td>
+                    <td><input type="radio" name="fruit" value="6"></td>
+                    <td><input type="radio" name="fruit" value="7"></td>
+                </tr>
+                <tr>
+                    <td>野菜(イモ類は除く)</td>
+                    <td><input type="radio" name="vegetables" value="0"></td>
+                    <td><input type="radio" name="vegetables" value="1"></td>
+                    <td><input type="radio" name="vegetables" value="2"></td>
+                    <td><input type="radio" name="vegetables" value="3"></td>
+                    <td><input type="radio" name="vegetables" value="4"></td>
+                    <td><input type="radio" name="vegetables" value="5"></td>
+                    <td><input type="radio" name="vegetables" value="6"></td>
+                    <td><input type="radio" name="vegetables" value="7"></td>
+                </tr>
+                <tr>
+                    <td>全粒穀物</td>
+                    <td><input type="radio" name="whole_grains" value="0"></td>
+                    <td><input type="radio" name="whole_grains" value="1"></td>
+                    <td><input type="radio" name="whole_grains" value="2"></td>
+                    <td><input type="radio" name="whole_grains" value="3"></td>
+                    <td><input type="radio" name="whole_grains" value="4"></td>
+                    <td><input type="radio" name="whole_grains" value="5"></td>
+                    <td><input type="radio" name="whole_grains" value="6"></td>
+                    <td><input type="radio" name="whole_grains" value="7"></td>
+                </tr>
+
+                <tr>
+                    <td>乳製品（牛乳、ヨーグルト、チーズなど）</td>
+                    <td><input type="radio" name="fruit" value="0"></td>
+                    <td><input type="radio" name="fruit" value="1"></td>
+                    <td><input type="radio" name="fruit" value="2"></td>
+                    <td><input type="radio" name="fruit" value="3"></td>
+                    <td><input type="radio" name="fruit" value="4"></td>
+                    <td><input type="radio" name="fruit" value="5"></td>
+                    <td><input type="radio" name="fruit" value="6"></td>
+                    <td><input type="radio" name="fruit" value="7"></td>
+                </tr>
+                <tr>
+                    <td>ナッツ類</td>
+                    <td><input type="radio" name="vegetables" value="0"></td>
+                    <td><input type="radio" name="vegetables" value="1"></td>
+                    <td><input type="radio" name="vegetables" value="2"></td>
+                    <td><input type="radio" name="vegetables" value="3"></td>
+                    <td><input type="radio" name="vegetables" value="4"></td>
+                    <td><input type="radio" name="vegetables" value="5"></td>
+                    <td><input type="radio" name="vegetables" value="6"></td>
+                    <td><input type="radio" name="vegetables" value="7"></td>
+                </tr>
+                <tr>
+                    <td>豆類</td>
+                    <td><input type="radio" name="whole_grains" value="0"></td>
+                    <td><input type="radio" name="whole_grains" value="1"></td>
+                    <td><input type="radio" name="whole_grains" value="2"></td>
+                    <td><input type="radio" name="whole_grains" value="3"></td>
+                    <td><input type="radio" name="whole_grains" value="4"></td>
+                    <td><input type="radio" name="whole_grains" value="5"></td>
+                    <td><input type="radio" name="whole_grains" value="6"></td>
+                    <td><input type="radio" name="whole_grains" value="7"></td>
+                </tr>
+
+                <tr>
+                    <td>加工肉（ソーセージ、ハム、ベーコンなど）</td>
+                    <td><input type="radio" name="fruit" value="0"></td>
+                    <td><input type="radio" name="fruit" value="1"></td>
+                    <td><input type="radio" name="fruit" value="2"></td>
+                    <td><input type="radio" name="fruit" value="3"></td>
+                    <td><input type="radio" name="fruit" value="4"></td>
+                    <td><input type="radio" name="fruit" value="5"></td>
+                    <td><input type="radio" name="fruit" value="6"></td>
+                    <td><input type="radio" name="fruit" value="7"></td>
+                </tr>
+                <tr>
+                    <td>牛肉、豚肉、羊肉</td>
+                    <td><input type="radio" name="vegetables" value="0"></td>
+                    <td><input type="radio" name="vegetables" value="1"></td>
+                    <td><input type="radio" name="vegetables" value="2"></td>
+                    <td><input type="radio" name="vegetables" value="3"></td>
+                    <td><input type="radio" name="vegetables" value="4"></td>
+                    <td><input type="radio" name="vegetables" value="5"></td>
+                    <td><input type="radio" name="vegetables" value="6"></td>
+                    <td><input type="radio" name="vegetables" value="7"></td>
+                </tr>
+                <tr>
+                    <td>鶏肉</td>
+                    <td><input type="radio" name="whole_grains" value="0"></td>
+                    <td><input type="radio" name="whole_grains" value="1"></td>
+                    <td><input type="radio" name="whole_grains" value="2"></td>
+                    <td><input type="radio" name="whole_grains" value="3"></td>
+                    <td><input type="radio" name="whole_grains" value="4"></td>
+                    <td><input type="radio" name="whole_grains" value="5"></td>
+                    <td><input type="radio" name="whole_grains" value="6"></td>
+                    <td><input type="radio" name="whole_grains" value="7"></td>
+                </tr>
+
+                <tr>
+                    <td>魚、貝類</td>
+                    <td><input type="radio" name="fruit" value="0"></td>
+                    <td><input type="radio" name="fruit" value="1"></td>
+                    <td><input type="radio" name="fruit" value="2"></td>
+                    <td><input type="radio" name="fruit" value="3"></td>
+                    <td><input type="radio" name="fruit" value="4"></td>
+                    <td><input type="radio" name="fruit" value="5"></td>
+                    <td><input type="radio" name="fruit" value="6"></td>
+                    <td><input type="radio" name="fruit" value="7"></td>
+                </tr>
+                <tr>
+                    <td>甘い洋菓子：マフィン1個、クッキー2個程度</td>
+                    <td><input type="radio" name="vegetables" value="0"></td>
+                    <td><input type="radio" name="vegetables" value="1"></td>
+                    <td><input type="radio" name="vegetables" value="2"></td>
+                    <td><input type="radio" name="vegetables" value="3"></td>
+                    <td><input type="radio" name="vegetables" value="4"></td>
+                    <td><input type="radio" name="vegetables" value="5"></td>
+                    <td><input type="radio" name="vegetables" value="6"></td>
+                    <td><input type="radio" name="vegetables" value="7"></td>
+                </tr>
+                <tr>
+                    <td>甘い和菓子：大福1個、だんご1本程度</td>
+                    <td><input type="radio" name="whole_grains" value="0"></td>
+                    <td><input type="radio" name="whole_grains" value="1"></td>
+                    <td><input type="radio" name="whole_grains" value="2"></td>
+                    <td><input type="radio" name="whole_grains" value="3"></td>
+                    <td><input type="radio" name="whole_grains" value="4"></td>
+                    <td><input type="radio" name="whole_grains" value="5"></td>
+                    <td><input type="radio" name="whole_grains" value="6"></td>
+                    <td><input type="radio" name="whole_grains" value="7"></td>
+                </tr>
+
+                <tr>
+                    <td>しょっぱいスイーツ：ポテチ小さい一袋程度</td>
+                    <td><input type="radio" name="fruit" value="0"></td>
+                    <td><input type="radio" name="fruit" value="1"></td>
+                    <td><input type="radio" name="fruit" value="2"></td>
+                    <td><input type="radio" name="fruit" value="3"></td>
+                    <td><input type="radio" name="fruit" value="4"></td>
+                    <td><input type="radio" name="fruit" value="5"></td>
+                    <td><input type="radio" name="fruit" value="6"></td>
+                    <td><input type="radio" name="fruit" value="7"></td>
+                </tr>
+                <tr>
+                    <td>カップラーメン、カップ焼きそば：普通サイズ1個</td>
+                    <td><input type="radio" name="vegetables" value="0"></td>
+                    <td><input type="radio" name="vegetables" value="1"></td>
+                    <td><input type="radio" name="vegetables" value="2"></td>
+                    <td><input type="radio" name="vegetables" value="3"></td>
+                    <td><input type="radio" name="vegetables" value="4"></td>
+                    <td><input type="radio" name="vegetables" value="5"></td>
+                    <td><input type="radio" name="vegetables" value="6"></td>
+                    <td><input type="radio" name="vegetables" value="7"></td>
+                </tr>
+                
+                <td colspan="9" class="food-category">飲料：それぞれグラス1杯程度</td>
+
+                <tr>
+                    <td>砂糖が添加された飲み物（100%ジュースを除く）</td>
+                    <td><input type="radio" name="fruit" value="0"></td>
+                    <td><input type="radio" name="fruit" value="1"></td>
+                    <td><input type="radio" name="fruit" value="2"></td>
+                    <td><input type="radio" name="fruit" value="3"></td>
+                    <td><input type="radio" name="fruit" value="4"></td>
+                    <td><input type="radio" name="fruit" value="5"></td>
+                    <td><input type="radio" name="fruit" value="6"></td>
+                    <td><input type="radio" name="fruit" value="7"></td>
+                </tr>
+                <tr>
+                    <td>人工甘味料入りの甘い飲料（カロリーゼロ〇〇など）</td>
+                    <td><input type="radio" name="vegetables" value="0"></td>
+                    <td><input type="radio" name="vegetables" value="1"></td>
+                    <td><input type="radio" name="vegetables" value="2"></td>
+                    <td><input type="radio" name="vegetables" value="3"></td>
+                    <td><input type="radio" name="vegetables" value="4"></td>
+                    <td><input type="radio" name="vegetables" value="5"></td>
+                    <td><input type="radio" name="vegetables" value="6"></td>
+                    <td><input type="radio" name="vegetables" value="7"></td>
+                </tr>
+                <tr>
+                    <td>100%ジュース</td>
+                    <td><input type="radio" name="whole_grains" value="0"></td>
+                    <td><input type="radio" name="whole_grains" value="1"></td>
+                    <td><input type="radio" name="whole_grains" value="2"></td>
+                    <td><input type="radio" name="whole_grains" value="3"></td>
+                    <td><input type="radio" name="whole_grains" value="4"></td>
+                    <td><input type="radio" name="whole_grains" value="5"></td>
+                    <td><input type="radio" name="whole_grains" value="6"></td>
+                    <td><input type="radio" name="whole_grains" value="7"></td>
+                </tr>
+
+                <tr>
+                    <td>みそ汁、スープ</td>
+                    <td><input type="radio" name="fruit" value="0"></td>
+                    <td><input type="radio" name="fruit" value="1"></td>
+                    <td><input type="radio" name="fruit" value="2"></td>
+                    <td><input type="radio" name="fruit" value="3"></td>
+                    <td><input type="radio" name="fruit" value="4"></td>
+                    <td><input type="radio" name="fruit" value="5"></td>
+                    <td><input type="radio" name="fruit" value="6"></td>
+                    <td><input type="radio" name="fruit" value="7"></td>
+                </tr>
+                <tr>
+                    <td>ビール、発泡酒</td>
+                    <td><input type="radio" name="vegetables" value="0"></td>
+                    <td><input type="radio" name="vegetables" value="1"></td>
+                    <td><input type="radio" name="vegetables" value="2"></td>
+                    <td><input type="radio" name="vegetables" value="3"></td>
+                    <td><input type="radio" name="vegetables" value="4"></td>
+                    <td><input type="radio" name="vegetables" value="5"></td>
+                    <td><input type="radio" name="vegetables" value="6"></td>
+                    <td><input type="radio" name="vegetables" value="7"></td>
+                </tr>
+                <tr>
+                    <td>チューハイ、焼酎</td>
+                    <td><input type="radio" name="whole_grains" value="0"></td>
+                    <td><input type="radio" name="whole_grains" value="1"></td>
+                    <td><input type="radio" name="whole_grains" value="2"></td>
+                    <td><input type="radio" name="whole_grains" value="3"></td>
+                    <td><input type="radio" name="whole_grains" value="4"></td>
+                    <td><input type="radio" name="whole_grains" value="5"></td>
+                    <td><input type="radio" name="whole_grains" value="6"></td>
+                    <td><input type="radio" name="whole_grains" value="7"></td>
+                </tr>
+
+                <tr>
+                    <td>日本酒</td>
+                    <td><input type="radio" name="fruit" value="0"></td>
+                    <td><input type="radio" name="fruit" value="1"></td>
+                    <td><input type="radio" name="fruit" value="2"></td>
+                    <td><input type="radio" name="fruit" value="3"></td>
+                    <td><input type="radio" name="fruit" value="4"></td>
+                    <td><input type="radio" name="fruit" value="5"></td>
+                    <td><input type="radio" name="fruit" value="6"></td>
+                    <td><input type="radio" name="fruit" value="7"></td>
+                </tr>
+                <tr>
+                    <td>赤ワイン</td>
+                    <td><input type="radio" name="vegetables" value="0"></td>
+                    <td><input type="radio" name="vegetables" value="1"></td>
+                    <td><input type="radio" name="vegetables" value="2"></td>
+                    <td><input type="radio" name="vegetables" value="3"></td>
+                    <td><input type="radio" name="vegetables" value="4"></td>
+                    <td><input type="radio" name="vegetables" value="5"></td>
+                    <td><input type="radio" name="vegetables" value="6"></td>
+                    <td><input type="radio" name="vegetables" value="7"></td>
+                </tr>
+                <tr>
+                    <td>白ワイン</td>
+                    <td><input type="radio" name="vegetables" value="0"></td>
+                    <td><input type="radio" name="vegetables" value="1"></td>
+                    <td><input type="radio" name="vegetables" value="2"></td>
+                    <td><input type="radio" name="vegetables" value="3"></td>
+                    <td><input type="radio" name="vegetables" value="4"></td>
+                    <td><input type="radio" name="vegetables" value="5"></td>
+                    <td><input type="radio" name="vegetables" value="6"></td>
+                    <td><input type="radio" name="vegetables" value="7"></td>
+                </tr>
+                <tr>
+                    <td>ジン、ウォッカ、テキーラ、ウィスキー</td>
+                    <td><input type="radio" name="whole_grains" value="0"></td>
+                    <td><input type="radio" name="whole_grains" value="1"></td>
+                    <td><input type="radio" name="whole_grains" value="2"></td>
+                    <td><input type="radio" name="whole_grains" value="3"></td>
+                    <td><input type="radio" name="whole_grains" value="4"></td>
+                    <td><input type="radio" name="whole_grains" value="5"></td>
+                    <td><input type="radio" name="whole_grains" value="6"></td>
+                    <td><input type="radio" name="whole_grains" value="7"></td>
+                </tr>
+                <tr>
+                    <td>果実酒（梅酒など）</td>
+                    <td><input type="radio" name="fruit" value="0"></td>
+                    <td><input type="radio" name="fruit" value="1"></td>
+                    <td><input type="radio" name="fruit" value="2"></td>
+                    <td><input type="radio" name="fruit" value="3"></td>
+                    <td><input type="radio" name="fruit" value="4"></td>
+                    <td><input type="radio" name="fruit" value="5"></td>
+                    <td><input type="radio" name="fruit" value="6"></td>
+                    <td><input type="radio" name="fruit" value="7"></td>
+                </tr>
+                <tr>
+                    <td>ブラックコーヒー（カフェイン入り）</td>
+                    <td><input type="radio" name="vegetables" value="0"></td>
+                    <td><input type="radio" name="vegetables" value="1"></td>
+                    <td><input type="radio" name="vegetables" value="2"></td>
+                    <td><input type="radio" name="vegetables" value="3"></td>
+                    <td><input type="radio" name="vegetables" value="4"></td>
+                    <td><input type="radio" name="vegetables" value="5"></td>
+                    <td><input type="radio" name="vegetables" value="6"></td>
+                    <td><input type="radio" name="vegetables" value="7"></td>
+                </tr>
+                <tr>
+                    <td>デカフェ、カフェインレスコーヒー</td>
+                    <td><input type="radio" name="whole_grains" value="0"></td>
+                    <td><input type="radio" name="whole_grains" value="1"></td>
+                    <td><input type="radio" name="whole_grains" value="2"></td>
+                    <td><input type="radio" name="whole_grains" value="3"></td>
+                    <td><input type="radio" name="whole_grains" value="4"></td>
+                    <td><input type="radio" name="whole_grains" value="5"></td>
+                    <td><input type="radio" name="whole_grains" value="6"></td>
+                    <td><input type="radio" name="whole_grains" value="7"></td>
+                </tr>
+
+                <tr>
+                    <td>ブラックティー（紅茶）</td>
+                    <td><input type="radio" name="fruit" value="0"></td>
+                    <td><input type="radio" name="fruit" value="1"></td>
+                    <td><input type="radio" name="fruit" value="2"></td>
+                    <td><input type="radio" name="fruit" value="3"></td>
+                    <td><input type="radio" name="fruit" value="4"></td>
+                    <td><input type="radio" name="fruit" value="5"></td>
+                    <td><input type="radio" name="fruit" value="6"></td>
+                    <td><input type="radio" name="fruit" value="7"></td>
+                </tr>
+                <tr>
+                    <td>（甘くない）緑茶</td>
+                    <td><input type="radio" name="vegetables" value="0"></td>
+                    <td><input type="radio" name="vegetables" value="1"></td>
+                    <td><input type="radio" name="vegetables" value="2"></td>
+                    <td><input type="radio" name="vegetables" value="3"></td>
+                    <td><input type="radio" name="vegetables" value="4"></td>
+                    <td><input type="radio" name="vegetables" value="5"></td>
+                    <td><input type="radio" name="vegetables" value="6"></td>
+                    <td><input type="radio" name="vegetables" value="7"></td>
+                </tr>
+
+            </tbody>
+        </table>
+        <button type="submit">送信</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
